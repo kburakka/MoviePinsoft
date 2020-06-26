@@ -13,6 +13,11 @@
 		67072C6424A6607E00C74EE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67072C6224A6607E00C74EE3 /* Main.storyboard */; };
 		67072C6624A6608000C74EE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67072C6524A6608000C74EE3 /* Assets.xcassets */; };
 		67072C6924A6608000C74EE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67072C6724A6608000C74EE3 /* LaunchScreen.storyboard */; };
+		67072C7324A6645200C74EE3 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67072C7224A6645200C74EE3 /* SplashViewController.swift */; };
+		67072C7624A664D300C74EE3 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67072C7524A664D300C74EE3 /* Reachability.swift */; };
+		67072C7B24A6667C00C74EE3 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67072C7A24A6667C00C74EE3 /* UIViewController.swift */; };
+		67072C8024A6672E00C74EE3 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67072C7F24A6672E00C74EE3 /* MasterViewController.swift */; };
+		67072C8224A669B100C74EE3 /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67072C8124A669B100C74EE3 /* UILabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		67072C6524A6608000C74EE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		67072C6824A6608000C74EE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		67072C6A24A6608000C74EE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67072C7224A6645200C74EE3 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		67072C7524A664D300C74EE3 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		67072C7A24A6667C00C74EE3 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		67072C7F24A6672E00C74EE3 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		67072C8124A669B100C74EE3 /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,8 @@
 		67072C5B24A6607E00C74EE3 /* MoviePinsoft */ = {
 			isa = PBXGroup;
 			children = (
+				67072C7424A664C200C74EE3 /* Utility */,
+				67072C7024A6642200C74EE3 /* ViewController */,
 				67072C5C24A6607E00C74EE3 /* AppDelegate.swift */,
 				67072C5E24A6607E00C74EE3 /* SceneDelegate.swift */,
 				67072C6024A6607E00C74EE3 /* ViewController.swift */,
@@ -65,6 +77,49 @@
 				67072C6A24A6608000C74EE3 /* Info.plist */,
 			);
 			path = MoviePinsoft;
+			sourceTree = "<group>";
+		};
+		67072C7024A6642200C74EE3 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				67072C7C24A666FF00C74EE3 /* HomePage */,
+				67072C7124A6643000C74EE3 /* Splash */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		67072C7124A6643000C74EE3 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				67072C7224A6645200C74EE3 /* SplashViewController.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		67072C7424A664C200C74EE3 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				67072C7924A6666B00C74EE3 /* Extension */,
+				67072C7524A664D300C74EE3 /* Reachability.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		67072C7924A6666B00C74EE3 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				67072C7A24A6667C00C74EE3 /* UIViewController.swift */,
+				67072C8124A669B100C74EE3 /* UILabel.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		67072C7C24A666FF00C74EE3 /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				67072C7F24A6672E00C74EE3 /* MasterViewController.swift */,
+			);
+			path = HomePage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +195,12 @@
 			files = (
 				67072C6124A6607E00C74EE3 /* ViewController.swift in Sources */,
 				67072C5D24A6607E00C74EE3 /* AppDelegate.swift in Sources */,
+				67072C7B24A6667C00C74EE3 /* UIViewController.swift in Sources */,
 				67072C5F24A6607E00C74EE3 /* SceneDelegate.swift in Sources */,
+				67072C7624A664D300C74EE3 /* Reachability.swift in Sources */,
+				67072C8024A6672E00C74EE3 /* MasterViewController.swift in Sources */,
+				67072C8224A669B100C74EE3 /* UILabel.swift in Sources */,
+				67072C7324A6645200C74EE3 /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
