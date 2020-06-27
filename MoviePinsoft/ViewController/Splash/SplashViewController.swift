@@ -28,9 +28,9 @@ class SplashViewController: UIViewController {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(true, animated: animated)
     }
-    
+
     func presentMasterViewController(){
-        guard let vc = self.storyboard?.instantiateViewController(withIdentifier: "MasterViewController") else { return }
-        self.navigationController?.setViewControllers([vc], animated: true)
+        guard let masterVC = self.storyboard?.instantiateViewController(withIdentifier: "MasterViewController") else { return }
+        self.navigationController?.setViewControllers([masterVC], animated: true)
     }
 }

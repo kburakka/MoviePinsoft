@@ -18,6 +18,9 @@
 		67072C7B24A6667C00C74EE3 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67072C7A24A6667C00C74EE3 /* UIViewController.swift */; };
 		67072C8024A6672E00C74EE3 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67072C7F24A6672E00C74EE3 /* MasterViewController.swift */; };
 		67072C8224A669B100C74EE3 /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67072C8124A669B100C74EE3 /* UILabel.swift */; };
+		67072C8824A72F6500C74EE3 /* SearchMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67072C8724A72F6500C74EE3 /* SearchMovie.swift */; };
+		67072C8A24A72F8400C74EE3 /* MovieDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67072C8924A72F8400C74EE3 /* MovieDetail.swift */; };
+		67072C8C24A72F9A00C74EE3 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67072C8B24A72F9A00C74EE3 /* Search.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		67072C7A24A6667C00C74EE3 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		67072C7F24A6672E00C74EE3 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		67072C8124A669B100C74EE3 /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
+		67072C8724A72F6500C74EE3 /* SearchMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMovie.swift; sourceTree = "<group>"; };
+		67072C8924A72F8400C74EE3 /* MovieDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetail.swift; sourceTree = "<group>"; };
+		67072C8B24A72F9A00C74EE3 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +72,8 @@
 		67072C5B24A6607E00C74EE3 /* MoviePinsoft */ = {
 			isa = PBXGroup;
 			children = (
+				67072C8624A72F3D00C74EE3 /* Model */,
+				67072C8324A72EE600C74EE3 /* Network */,
 				67072C7424A664C200C74EE3 /* Utility */,
 				67072C7024A6642200C74EE3 /* ViewController */,
 				67072C5C24A6607E00C74EE3 /* AppDelegate.swift */,
@@ -120,6 +128,23 @@
 				67072C7F24A6672E00C74EE3 /* MasterViewController.swift */,
 			);
 			path = HomePage;
+			sourceTree = "<group>";
+		};
+		67072C8324A72EE600C74EE3 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		67072C8624A72F3D00C74EE3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				67072C8724A72F6500C74EE3 /* SearchMovie.swift */,
+				67072C8924A72F8400C74EE3 /* MovieDetail.swift */,
+				67072C8B24A72F9A00C74EE3 /* Search.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,12 +218,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67072C8C24A72F9A00C74EE3 /* Search.swift in Sources */,
 				67072C6124A6607E00C74EE3 /* ViewController.swift in Sources */,
 				67072C5D24A6607E00C74EE3 /* AppDelegate.swift in Sources */,
+				67072C8824A72F6500C74EE3 /* SearchMovie.swift in Sources */,
 				67072C7B24A6667C00C74EE3 /* UIViewController.swift in Sources */,
 				67072C5F24A6607E00C74EE3 /* SceneDelegate.swift in Sources */,
 				67072C7624A664D300C74EE3 /* Reachability.swift in Sources */,
 				67072C8024A6672E00C74EE3 /* MasterViewController.swift in Sources */,
+				67072C8A24A72F8400C74EE3 /* MovieDetail.swift in Sources */,
 				67072C8224A669B100C74EE3 /* UILabel.swift in Sources */,
 				67072C7324A6645200C74EE3 /* SplashViewController.swift in Sources */,
 			);
