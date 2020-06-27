@@ -15,7 +15,7 @@ protocol APIConfiguration: URLRequestConvertible {
 }
 
 struct ProductionServer {
-    static let MovieAPIKey = "80a1bd91"
+    static var MovieAPIKey = ""
     static let baseURL = "http://www.omdbapi.com/?apikey=\(MovieAPIKey)"
 }
 
@@ -28,8 +28,4 @@ enum HTTPHeaderField: String {
 
 enum ContentType: String {
     case json = "application/json"
-}
-enum BackendError: Error {
-    case urlError(reason: String)
-    case objectSerialization(reason: String)
 }

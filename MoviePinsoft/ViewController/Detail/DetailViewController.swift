@@ -8,10 +8,15 @@
 
 import UIKit
 import SDWebImage
+import FirebaseAnalytics
 
 class DetailViewController: UIViewController {
     
-    var movieDetail : MovieDetail?
+    var movieDetail : MovieDetail? {
+        didSet{
+            Analytics.logEvent("movieDetail", parameters: movieDetail?.asDictionary())
+        }
+    }
     var countFired: CGFloat = 0
     var mirrorMovie : Mirror?
     var cellsToShow = [KeyValue]()
@@ -28,9 +33,6 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         cellsToShow.removeAll()
-        tableView.delegate = self
-        tableView.dataSource = self
-        
         setUI()
     }
 }

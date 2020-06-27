@@ -63,7 +63,7 @@ extension MasterViewController{
             completion()
             return
         }
-        APIClient.getSearchMovie(searchText: escapedString) { (result,error)  in
+        APIClient.shared.getSearchMovie(searchText: escapedString) { (result,error)  in
             if let error = error{
                 self.searchResults.removeAll()
                 switch error {
@@ -90,7 +90,7 @@ extension MasterViewController{
     }
     
     func getMovieDetail(imdbID : String, completion: @escaping () -> Void){
-        APIClient.getMovieDetail(imdbID: imdbID) { (result,error) in
+        APIClient.shared.getMovieDetail(imdbID: imdbID) { (result,error) in
             if let error = error{
                 switch error {
                 case .success(let error):

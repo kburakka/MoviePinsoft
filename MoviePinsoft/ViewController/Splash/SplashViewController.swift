@@ -14,9 +14,8 @@ class SplashViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         if Reachability.isConnectedToNetwork() {
-            mainText.startAnimation(duration: 3.0){
-                self.presentMasterViewController()
-            }
+            let _ = RemoteConfigValues.shared
+            RemoteConfigValues.shared.loadingDoneCallback = setRemoteConfigValues
         }else{
             self.showTryAgainAlert(title: "Error", message: "Please check your internet connection.", isCancelable: false) { (_) in
                 self.viewDidLoad()
@@ -32,5 +31,21 @@ class SplashViewController: UIViewController {
     func presentMasterViewController(){
         guard let masterVC = self.storyboard?.instantiateViewController(withIdentifier: "MasterViewController") else { return }
         self.navigationController?.setViewControllers([masterVC], animated: false)
+    }
+    
+    func setRemoteConfigValues(){
+        setMainText()
+        setApiKey()
+    }
+    
+    func setApiKey(){
+        ProductionServer.MovieAPIKey = RemoteConfigValues.shared.getString(forKey: .api_key)
+    }
+    
+    func setMainText(){
+        self.mainText.text = RemoteConfigValues.shared.getString(forKey: .splash)
+        mainText.startAnimation(duration: 3.0){
+             self.presentMasterViewController()
+         }
     }
 }

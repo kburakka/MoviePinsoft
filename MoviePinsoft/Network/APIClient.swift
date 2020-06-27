@@ -11,26 +11,32 @@ import Alamofire
 
 class APIClient {
     
+    static let shared: APIClient = {
+        let instance = APIClient()
+        return instance
+    }()
+    
+    //ERROR RESPONSE JSON FARKLI OLDUGU ICIN COMPLETION'DA 2 FARKLI TYPE VAR
     @discardableResult
-    private static func performRequest<T:Decodable>(route:APIRouter, decoder: JSONDecoder = JSONDecoder(), completion:@escaping ((Result<T, AFError>)?,Result<ErrorResponse, AFError>?)->Void) -> DataRequest {
+    func performRequest<T:Decodable>(route:APIRouter, decoder: JSONDecoder = JSONDecoder(), completion:@escaping ((Result<T, AFError>)?,Result<ErrorResponse, AFError>?)->Void) -> DataRequest {
         let request = AF.request(route)
         return request.responseDecodable (decoder: decoder){ (response: DataResponse<T, AFError>) in
             switch response.result {
             case .success( _):
                 completion(response.result,nil)
             case .failure( _):
-                request.responseDecodable { (response: DataResponse<ErrorResponse, AFError>) in
-                    completion(nil,response.result)
+                request.responseDecodable { (errorResponse: DataResponse<ErrorResponse, AFError>) in
+                    completion(nil,errorResponse.result)
                 }
             }
         }
     }
     
-    static func getSearchMovie(searchText : String, completion:@escaping (Result<Search, AFError>?,Result<ErrorResponse, AFError>?)->Void) {
+    func getSearchMovie(searchText : String, completion:@escaping (Result<Search, AFError>?,Result<ErrorResponse, AFError>?)->Void) {
         performRequest(route: APIRouter.search(text: searchText), completion: completion)
     }
     
-    static func getMovieDetail(imdbID : String, completion:@escaping (Result<MovieDetail, AFError>?,Result<ErrorResponse, AFError>?)->Void) {
+    func getMovieDetail(imdbID : String, completion:@escaping (Result<MovieDetail, AFError>?,Result<ErrorResponse, AFError>?)->Void) {
         performRequest(route: APIRouter.movieDetail(id: imdbID), completion: completion)
     }
 }
