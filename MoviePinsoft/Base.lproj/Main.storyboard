@@ -14,13 +14,53 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="6WS-S9-VoX">
+                                <rect key="frame" x="0.0" y="44" width="414" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="QVn-Pn-4vU"/>
+                                </connections>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zpy-Le-VbZ">
+                                <rect key="frame" x="0.0" y="100" width="414" height="762"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="Abi-Uv-zUn">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Abi-Uv-zUn" id="hbd-XI-3Bw">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="gz6-P5-MoH"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Pd2-0P-no6"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6WS-S9-VoX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="20S-w9-pta"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zpy-Le-VbZ" secondAttribute="bottom" id="3UK-Hi-Hpk"/>
+                            <constraint firstItem="zpy-Le-VbZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="H9F-0y-Y7U"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zpy-Le-VbZ" secondAttribute="trailing" id="ObH-80-8hV"/>
+                            <constraint firstItem="6WS-S9-VoX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Tf6-KF-o1g"/>
+                            <constraint firstItem="6WS-S9-VoX" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="TmI-7z-1g9"/>
+                            <constraint firstItem="zpy-Le-VbZ" firstAttribute="top" secondItem="6WS-S9-VoX" secondAttribute="bottom" id="xgf-ds-e7g"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="searchBar" destination="6WS-S9-VoX" id="gPv-hd-88I"/>
+                        <outlet property="tableView" destination="zpy-Le-VbZ" id="1Z3-3O-fE3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-551" y="140"/>
+            <point key="canvasLocation" x="3020" y="140"/>
         </scene>
         <!--Splash View Controller-->
         <scene sceneID="4du-WG-U8U">

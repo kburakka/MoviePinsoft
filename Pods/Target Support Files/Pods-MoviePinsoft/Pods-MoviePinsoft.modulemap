@@ -1,0 +1,6 @@
+module Pods_MoviePinsoft {
+  umbrella header "Pods-MoviePinsoft-umbrella.h"
+
+  export *
+  module * { export * }
+}
