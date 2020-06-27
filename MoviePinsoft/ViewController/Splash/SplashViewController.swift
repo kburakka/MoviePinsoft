@@ -31,6 +31,6 @@ class SplashViewController: UIViewController {
 
     func presentMasterViewController(){
         guard let masterVC = self.storyboard?.instantiateViewController(withIdentifier: "MasterViewController") else { return }
-        self.navigationController?.setViewControllers([masterVC], animated: true)
+        self.navigationController?.setViewControllers([masterVC], animated: false)
     }
 }

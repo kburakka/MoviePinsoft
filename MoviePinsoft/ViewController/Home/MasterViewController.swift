@@ -9,7 +9,7 @@
 import UIKit
 
 class MasterViewController: UIViewController {
-
+    
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
     
@@ -38,7 +38,7 @@ class MasterViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         setMessages()
         self.hideKeyboardWhenTappedAround()
     }
@@ -88,6 +88,34 @@ extension MasterViewController{
             completion()
         }
     }
+    
+    func getMovieDetail(imdbID : String, completion: @escaping () -> Void){
+        APIClient.getMovieDetail(imdbID: imdbID) { (result,error) in
+            if let error = error{
+                switch error {
+                case .success(let error):
+                    self.showAlert(title: "Error", message: error.Error)
+                case .failure(let error):
+                    self.showAlert(title: "Error", message: error.localizedDescription)
+                }
+            }else{
+                switch result {
+                case .success(let searchMovie):
+                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                    if let vc = storyboard.instantiateViewController(withIdentifier: "DetailVC") as? DetailViewController
+                    {
+                        vc.movieDetail = searchMovie
+                        self.navigationController?.pushViewController(vc, animated: true)
+                    }
+                case .failure(let error):
+                    self.showAlert(title: "Error", message: error.localizedDescription)
+                case .none:
+                    self.showAlert(title: "Error", message: "Something went wrong.")
+                }
+            }
+            completion()
+        }
+    }
 }
 
 extension MasterViewController : UISearchBarDelegate{
@@ -112,7 +140,16 @@ extension MasterViewController : UITableViewDataSource,UITableViewDelegate{
         
         return cell
     }
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 88.0
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let movie = searchResults[indexPath.row]
+        LoadingView(view: view).startAnimation()
+        getMovieDetail(imdbID: movie.imdbID) {
+            LoadingView(view: self.view).stopAnimation()
+        }
     }
 }

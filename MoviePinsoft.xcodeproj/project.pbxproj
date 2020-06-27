@@ -28,6 +28,12 @@
 		67072C9F24A74E4100C74EE3 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67072C9D24A74E4100C74EE3 /* SearchTableViewCell.swift */; };
 		67072CA024A74E4100C74EE3 /* SearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67072C9E24A74E4100C74EE3 /* SearchTableViewCell.xib */; };
 		67072CA224A74F0200C74EE3 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67072CA124A74F0200C74EE3 /* UITableView.swift */; };
+		67072CA524A772FB00C74EE3 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67072CA424A772FB00C74EE3 /* DetailViewController.swift */; };
+		67072CA724A7739200C74EE3 /* KeyValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67072CA624A7739200C74EE3 /* KeyValue.swift */; };
+		67072CA924A773CC00C74EE3 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67072CA824A773CC00C74EE3 /* ProgressBar.swift */; };
+		67072CAD24A7742900C74EE3 /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67072CAB24A7742900C74EE3 /* DetailTableViewCell.swift */; };
+		67072CAE24A7742900C74EE3 /* DetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67072CAC24A7742900C74EE3 /* DetailTableViewCell.xib */; };
+		67072CB024A7748700C74EE3 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67072CAF24A7748700C74EE3 /* UIImageView.swift */; };
 		920B9536BCF6B3EF1A11DCCE /* libPods-MoviePinsoft.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19A761569CECE1408DB4A6B8 /* libPods-MoviePinsoft.a */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +62,12 @@
 		67072C9D24A74E4100C74EE3 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 		67072C9E24A74E4100C74EE3 /* SearchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchTableViewCell.xib; sourceTree = "<group>"; };
 		67072CA124A74F0200C74EE3 /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
+		67072CA424A772FB00C74EE3 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		67072CA624A7739200C74EE3 /* KeyValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyValue.swift; sourceTree = "<group>"; };
+		67072CA824A773CC00C74EE3 /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
+		67072CAB24A7742900C74EE3 /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
+		67072CAC24A7742900C74EE3 /* DetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailTableViewCell.xib; sourceTree = "<group>"; };
+		67072CAF24A7748700C74EE3 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 		7B4EC45CFC7A20A08BB76A7D /* Pods-MoviePinsoft.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoviePinsoft.release.xcconfig"; path = "Target Support Files/Pods-MoviePinsoft/Pods-MoviePinsoft.release.xcconfig"; sourceTree = "<group>"; };
 		99A03E649724563D792C246D /* Pods-MoviePinsoft.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoviePinsoft.debug.xcconfig"; path = "Target Support Files/Pods-MoviePinsoft/Pods-MoviePinsoft.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -119,7 +131,8 @@
 		67072C7024A6642200C74EE3 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				67072C7C24A666FF00C74EE3 /* HomePage */,
+				67072CA324A772C700C74EE3 /* Detail */,
+				67072C7C24A666FF00C74EE3 /* Home */,
 				67072C7124A6643000C74EE3 /* Splash */,
 			);
 			path = ViewController;
@@ -148,16 +161,17 @@
 				67072C7A24A6667C00C74EE3 /* UIViewController.swift */,
 				67072C8124A669B100C74EE3 /* UILabel.swift */,
 				67072CA124A74F0200C74EE3 /* UITableView.swift */,
+				67072CAF24A7748700C74EE3 /* UIImageView.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
 		};
-		67072C7C24A666FF00C74EE3 /* HomePage */ = {
+		67072C7C24A666FF00C74EE3 /* Home */ = {
 			isa = PBXGroup;
 			children = (
 				67072C7F24A6672E00C74EE3 /* MasterViewController.swift */,
 			);
-			path = HomePage;
+			path = Home;
 			sourceTree = "<group>";
 		};
 		67072C8324A72EE600C74EE3 /* Network */ = {
@@ -177,6 +191,7 @@
 				67072C8924A72F8400C74EE3 /* MovieDetail.swift */,
 				67072C8B24A72F9A00C74EE3 /* Search.swift */,
 				67072C9624A73E2900C74EE3 /* ErrorResponse.swift */,
+				67072CA624A7739200C74EE3 /* KeyValue.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -184,7 +199,9 @@
 		67072C9324A73D8E00C74EE3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				67072CAA24A773F500C74EE3 /* DetailTableCell */,
 				67072C9824A74D3900C74EE3 /* SearchTableCell */,
+				67072CA824A773CC00C74EE3 /* ProgressBar.swift */,
 				67072C9424A73D9B00C74EE3 /* LoadingView.swift */,
 			);
 			path = View;
@@ -197,6 +214,23 @@
 				67072C9E24A74E4100C74EE3 /* SearchTableViewCell.xib */,
 			);
 			path = SearchTableCell;
+			sourceTree = "<group>";
+		};
+		67072CA324A772C700C74EE3 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				67072CA424A772FB00C74EE3 /* DetailViewController.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		67072CAA24A773F500C74EE3 /* DetailTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				67072CAB24A7742900C74EE3 /* DetailTableViewCell.swift */,
+				67072CAC24A7742900C74EE3 /* DetailTableViewCell.xib */,
+			);
+			path = DetailTableCell;
 			sourceTree = "<group>";
 		};
 		674F0D389A9FB22880482635 /* Pods */ = {
@@ -268,6 +302,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				67072C6924A6608000C74EE3 /* LaunchScreen.storyboard in Resources */,
+				67072CAE24A7742900C74EE3 /* DetailTableViewCell.xib in Resources */,
 				67072CA024A74E4100C74EE3 /* SearchTableViewCell.xib in Resources */,
 				67072C6624A6608000C74EE3 /* Assets.xcassets in Resources */,
 				67072C6424A6607E00C74EE3 /* Main.storyboard in Resources */,
@@ -311,10 +346,14 @@
 				67072C8E24A739DF00C74EE3 /* APIRouter.swift in Sources */,
 				67072C5D24A6607E00C74EE3 /* AppDelegate.swift in Sources */,
 				67072C8824A72F6500C74EE3 /* SearchMovie.swift in Sources */,
+				67072CA724A7739200C74EE3 /* KeyValue.swift in Sources */,
+				67072CB024A7748700C74EE3 /* UIImageView.swift in Sources */,
 				67072C7B24A6667C00C74EE3 /* UIViewController.swift in Sources */,
 				67072C5F24A6607E00C74EE3 /* SceneDelegate.swift in Sources */,
 				67072C7624A664D300C74EE3 /* Reachability.swift in Sources */,
+				67072CAD24A7742900C74EE3 /* DetailTableViewCell.swift in Sources */,
 				67072C9524A73D9B00C74EE3 /* LoadingView.swift in Sources */,
+				67072CA524A772FB00C74EE3 /* DetailViewController.swift in Sources */,
 				67072C8024A6672E00C74EE3 /* MasterViewController.swift in Sources */,
 				67072C9024A73A7700C74EE3 /* APIClient.swift in Sources */,
 				67072CA224A74F0200C74EE3 /* UITableView.swift in Sources */,
@@ -322,6 +361,7 @@
 				67072C9224A73AC800C74EE3 /* Constants.swift in Sources */,
 				67072C9F24A74E4100C74EE3 /* SearchTableViewCell.swift in Sources */,
 				67072C8224A669B100C74EE3 /* UILabel.swift in Sources */,
+				67072CA924A773CC00C74EE3 /* ProgressBar.swift in Sources */,
 				67072C7324A6645200C74EE3 /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -29,4 +29,8 @@ class APIClient {
     static func getSearchMovie(searchText : String, completion:@escaping (Result<Search, AFError>?,Result<ErrorResponse, AFError>?)->Void) {
         performRequest(route: APIRouter.search(text: searchText), completion: completion)
     }
+    
+    static func getMovieDetail(imdbID : String, completion:@escaping (Result<MovieDetail, AFError>?,Result<ErrorResponse, AFError>?)->Void) {
+        performRequest(route: APIRouter.movieDetail(id: imdbID), completion: completion)
+    }
 }
