@@ -16,7 +16,6 @@ enum ValueKey: String {
 class RemoteConfigValues {
     static let shared = RemoteConfigValues()
     var loadingDoneCallback: (() -> Void)?
-    var fetchComplete = false
     
     private init() {
         loadDefaultValues()
@@ -38,7 +37,6 @@ class RemoteConfigValues {
                 return
             }
             RemoteConfig.remoteConfig().activate(completion: nil)
-            self?.fetchComplete = true
             self?.loadingDoneCallback?()
             print("Retrieved values from the cloud!")
         }

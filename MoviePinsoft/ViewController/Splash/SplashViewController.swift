@@ -13,6 +13,7 @@ class SplashViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.delegate = self
         if Reachability.isConnectedToNetwork() {
             let _ = RemoteConfigValues.shared
             RemoteConfigValues.shared.loadingDoneCallback = setRemoteConfigValues
@@ -30,7 +31,7 @@ class SplashViewController: UIViewController {
 
     func presentMasterViewController(){
         guard let masterVC = self.storyboard?.instantiateViewController(withIdentifier: "MasterViewController") else { return }
-        self.navigationController?.setViewControllers([masterVC], animated: false)
+        self.navigationController?.setViewControllers([masterVC], animated: true)
     }
     
     func setRemoteConfigValues(){
@@ -44,8 +45,42 @@ class SplashViewController: UIViewController {
     
     func setMainText(){
         self.mainText.text = RemoteConfigValues.shared.getString(forKey: .splash)
+
         mainText.startAnimation(duration: 3.0){
-             self.presentMasterViewController()
+            self.presentMasterViewController()
          }
+    }
+}
+
+extension SplashViewController: UINavigationControllerDelegate {
+    func navigationController(_ navigationController: UINavigationController,
+                              animationControllerFor operation: UINavigationController.Operation,
+                              from fromVC: UIViewController,
+                              to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        class SplashTransition: NSObject, UIViewControllerAnimatedTransitioning {
+            func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
+                return 0.5
+            }
+
+            func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
+                let toViewController = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.to)
+                if let vc = toViewController {
+                    transitionContext.finalFrame(for: vc)
+                    transitionContext.containerView.addSubview(vc.view)
+                    vc.view.alpha = 0.0
+                    UIView.animate(withDuration: self.transitionDuration(using: transitionContext),
+                    animations: {
+                        vc.view.alpha = 1.0
+                    },
+                    completion: { finished in
+                        transitionContext.completeTransition(!transitionContext.transitionWasCancelled)
+                    })
+                } else {
+                    print("FadeAnimation something went wrong!")
+                }
+            }
+        }
+
+        return SplashTransition()
     }
 }

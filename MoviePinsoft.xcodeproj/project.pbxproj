@@ -531,7 +531,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = MoviePinsoft/MoviePinsoft.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 75265928R5;
+				DEVELOPMENT_TEAM = 7UJ425XN7W;
 				INFOPLIST_FILE = MoviePinsoft/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -551,7 +551,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = MoviePinsoft/MoviePinsoft.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 75265928R5;
+				DEVELOPMENT_TEAM = 7UJ425XN7W;
 				INFOPLIST_FILE = MoviePinsoft/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -16,7 +16,7 @@ class APIClient {
         return instance
     }()
     
-    //ERROR RESPONSE JSON FARKLI OLDUGU ICIN COMPLETION'DA 2 FARKLI TYPE VAR
+    //SERVISTEN GELEN ERROR RESPONSE FARKLI OLDUGU ICIN COMPLETION'DA 2 FARKLI TYPE VAR
     @discardableResult
     func performRequest<T:Decodable>(route:APIRouter, decoder: JSONDecoder = JSONDecoder(), completion:@escaping ((Result<T, AFError>)?,Result<ErrorResponse, AFError>?)->Void) -> DataRequest {
         let request = AF.request(route)

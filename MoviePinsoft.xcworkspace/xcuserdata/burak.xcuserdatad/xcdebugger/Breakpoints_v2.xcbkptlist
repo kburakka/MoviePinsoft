@@ -116,34 +116,34 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "BB7B27D5-E30E-40FB-8271-17FD3332E9F9 - 8f22a6072c400f30"
+                  uuid = "BB7B27D5-E30E-40FB-8271-17FD3332E9F9 - d75b9432fbfd2d4c"
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Alamofire.DataResponse&lt;A, Alamofire.AFError&gt;) -&gt; () in static MoviePinsoft.APIClient.(performRequest in _EDD7477CB40AED77FF88CE5196DAC779)&lt;A where A: Swift.Decodable&gt;(route: MoviePinsoft.APIRouter, decoder: Foundation.JSONDecoder, completion: (Swift.Result&lt;A, Alamofire.AFError&gt;) -&gt; ()) -&gt; Alamofire.DataRequest"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;A, Alamofire.AFError&gt;) -&gt; () in MoviePinsoft.APIClient.performRequest&lt;A where A: Swift.Decodable&gt;(route: MoviePinsoft.APIRouter, decoder: Foundation.JSONDecoder, completion: (Swift.Optional&lt;Swift.Result&lt;A, Alamofire.AFError&gt;&gt;, Swift.Optional&lt;Swift.Result&lt;MoviePinsoft.ErrorResponse, Alamofire.AFError&gt;&gt;) -&gt; ()) -&gt; Alamofire.DataRequest"
                   moduleName = "MoviePinsoft"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/burak/Desktop/XcodeDeneme/MoviePinsoft/MoviePinsoft/Network/APIClient.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "22"
-                  endingLineNumber = "22"
-                  offsetFromSymbolStart = "633">
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "1029">
                </Location>
                <Location
-                  uuid = "BB7B27D5-E30E-40FB-8271-17FD3332E9F9 - 1baa937b8fd5ac5b"
+                  uuid = "BB7B27D5-E30E-40FB-8271-17FD3332E9F9 - 41fed5fac0525f87"
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Alamofire.DataResponse&lt;MoviePinsoft.ErrorResponse, Alamofire.AFError&gt;) -&gt; () in closure #1 (Alamofire.DataResponse&lt;A, Alamofire.AFError&gt;) -&gt; () in static MoviePinsoft.APIClient.(performRequest in _EDD7477CB40AED77FF88CE5196DAC779)&lt;A where A: Swift.Decodable&gt;(route: MoviePinsoft.APIRouter, decoder: Foundation.JSONDecoder, completion: (Swift.Result&lt;A, Alamofire.AFError&gt;) -&gt; ()) -&gt; Alamofire.DataRequest"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;MoviePinsoft.ErrorResponse, Alamofire.AFError&gt;) -&gt; () in closure #1 (Alamofire.DataResponse&lt;A, Alamofire.AFError&gt;) -&gt; () in MoviePinsoft.APIClient.performRequest&lt;A where A: Swift.Decodable&gt;(route: MoviePinsoft.APIRouter, decoder: Foundation.JSONDecoder, completion: (Swift.Optional&lt;Swift.Result&lt;A, Alamofire.AFError&gt;&gt;, Swift.Optional&lt;Swift.Result&lt;MoviePinsoft.ErrorResponse, Alamofire.AFError&gt;&gt;) -&gt; ()) -&gt; Alamofire.DataRequest"
                   moduleName = "MoviePinsoft"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/burak/Desktop/XcodeDeneme/MoviePinsoft/MoviePinsoft/Network/APIClient.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "23"
-                  endingLineNumber = "23"
-                  offsetFromSymbolStart = "20">
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "262">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -222,41 +222,9 @@
             filePath = "MoviePinsoft/AppDelegate.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "111"
-            endingLineNumber = "111"
+            startingLineNumber = "155"
+            endingLineNumber = "155"
             landmarkName = "messaging(_:didReceiveRegistrationToken:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "E1B13EB2-3438-4CE0-BEFD-78EB0CBA1597"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MoviePinsoft/AppDelegate.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "101"
-            endingLineNumber = "101"
-            landmarkName = "userNotificationCenter(_:didReceive:withCompletionHandler:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "E89CCB88-45E4-4BD4-9A55-AE4669179158"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MoviePinsoft/AppDelegate.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "93"
-            endingLineNumber = "93"
-            landmarkName = "userNotificationCenter(_:willPresent:withCompletionHandler:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -359,54 +327,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "3BE44BD9-EC3A-4885-8D69-291C04E3DE2A"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MoviePinsoft/AppDelegate.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "80"
-            endingLineNumber = "80"
-            landmarkName = "application(_:didReceiveRemoteNotification:fetchCompletionHandler:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "4BBDDDDA-A76A-4B68-BF49-72BC1D8141D2"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MoviePinsoft/AppDelegate.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "79"
-            endingLineNumber = "79"
-            landmarkName = "application(_:didReceiveRemoteNotification:fetchCompletionHandler:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "DCC5F0CF-3AD4-4474-8726-CE59CD5E20DD"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MoviePinsoft/AppDelegate.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "72"
-            endingLineNumber = "72"
-            landmarkName = "application(_:didReceiveRemoteNotification:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "32BA9CCF-F472-4435-BCE8-2648D93F8EDD"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -418,6 +338,181 @@
             endingLineNumber = "17"
             landmarkName = "movieDetail"
             landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "02DA8226-E3AD-40F2-AD61-C603657481D0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MoviePinsoft/ViewController/Splash/SplashViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "SplashTransition"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "02DA8226-E3AD-40F2-AD61-C603657481D0 - 6f85ee718c1a280f"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__allocating_init() -&gt; FadeAnimation #1 in MoviePinsoft.SplashViewController.navigationController(_: __C.UINavigationController, animationControllerFor: __C.UINavigationControllerOperation, from: __C.UIViewController, to: __C.UIViewController) -&gt; Swift.Optional&lt;__C.UIViewControllerAnimatedTransitioning&gt; in FadeAnimation #1 in MoviePinsoft.SplashViewController.navigationController(_: __C.UINavigationController, animationControllerFor: __C.UINavigationControllerOperation, from: __C.UIViewController, to: __C.UIViewController) -&gt; Swift.Optional&lt;__C.UIViewControllerAnimatedTransitioning&gt;"
+                  moduleName = "MoviePinsoft"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/burak/Desktop/XcodeDeneme/MoviePinsoft/MoviePinsoft/ViewController/Splash/SplashViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  uuid = "02DA8226-E3AD-40F2-AD61-C603657481D0 - e6227d8b55c2ee14"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "init() -&gt; FadeAnimation #1 in MoviePinsoft.SplashViewController.navigationController(_: __C.UINavigationController, animationControllerFor: __C.UINavigationControllerOperation, from: __C.UIViewController, to: __C.UIViewController) -&gt; Swift.Optional&lt;__C.UIViewControllerAnimatedTransitioning&gt; in FadeAnimation #1 in MoviePinsoft.SplashViewController.navigationController(_: __C.UINavigationController, animationControllerFor: __C.UINavigationControllerOperation, from: __C.UIViewController, to: __C.UIViewController) -&gt; Swift.Optional&lt;__C.UIViewControllerAnimatedTransitioning&gt;"
+                  moduleName = "MoviePinsoft"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/burak/Desktop/XcodeDeneme/MoviePinsoft/MoviePinsoft/ViewController/Splash/SplashViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "69">
+               </Location>
+               <Location
+                  uuid = "02DA8226-E3AD-40F2-AD61-C603657481D0 - 8fc2a28f8dd70f97"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__deallocating_deinit in FadeAnimation #1 in MoviePinsoft.SplashViewController.navigationController(_: __C.UINavigationController, animationControllerFor: __C.UINavigationControllerOperation, from: __C.UIViewController, to: __C.UIViewController) -&gt; Swift.Optional&lt;__C.UIViewControllerAnimatedTransitioning&gt;"
+                  moduleName = "MoviePinsoft"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/burak/Desktop/XcodeDeneme/MoviePinsoft/MoviePinsoft/ViewController/Splash/SplashViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2972951C-D358-4590-8B40-DA00E3109D64"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MoviePinsoft/ViewController/Splash/SplashViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
+            landmarkName = "transitionDuration(using:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "93D9D58C-71C2-4562-BD97-003BEDE554C0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MoviePinsoft/ViewController/Splash/SplashViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
+            landmarkName = "animateTransition(using:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E3BDE11D-0029-4CAE-8931-7ED842D8C3F1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MoviePinsoft/Network/APIClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "performRequest(route:decoder:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6E0CC09A-BFA1-4FD7-AF0C-E8B4C11759FF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MoviePinsoft/Network/APIClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "performRequest(route:decoder:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "6E0CC09A-BFA1-4FD7-AF0C-E8B4C11759FF - d75b9432fbfd2d4c"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;A, Alamofire.AFError&gt;) -&gt; () in MoviePinsoft.APIClient.performRequest&lt;A where A: Swift.Decodable&gt;(route: MoviePinsoft.APIRouter, decoder: Foundation.JSONDecoder, completion: (Swift.Optional&lt;Swift.Result&lt;A, Alamofire.AFError&gt;&gt;, Swift.Optional&lt;Swift.Result&lt;MoviePinsoft.ErrorResponse, Alamofire.AFError&gt;&gt;) -&gt; ()) -&gt; Alamofire.DataRequest"
+                  moduleName = "MoviePinsoft"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/burak/Desktop/XcodeDeneme/MoviePinsoft/MoviePinsoft/Network/APIClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "1029">
+               </Location>
+               <Location
+                  uuid = "6E0CC09A-BFA1-4FD7-AF0C-E8B4C11759FF - 41fed5fac0525f87"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;MoviePinsoft.ErrorResponse, Alamofire.AFError&gt;) -&gt; () in closure #1 (Alamofire.DataResponse&lt;A, Alamofire.AFError&gt;) -&gt; () in MoviePinsoft.APIClient.performRequest&lt;A where A: Swift.Decodable&gt;(route: MoviePinsoft.APIRouter, decoder: Foundation.JSONDecoder, completion: (Swift.Optional&lt;Swift.Result&lt;A, Alamofire.AFError&gt;&gt;, Swift.Optional&lt;Swift.Result&lt;MoviePinsoft.ErrorResponse, Alamofire.AFError&gt;&gt;) -&gt; ()) -&gt; Alamofire.DataRequest"
+                  moduleName = "MoviePinsoft"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/burak/Desktop/XcodeDeneme/MoviePinsoft/MoviePinsoft/Network/APIClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "262">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DB7878ED-AC27-47EA-A126-2D5A36859FBD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MoviePinsoft/Network/APIClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "performRequest(route:decoder:completion:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

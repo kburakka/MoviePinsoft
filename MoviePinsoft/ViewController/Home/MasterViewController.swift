@@ -101,12 +101,7 @@ extension MasterViewController{
             }else{
                 switch result {
                 case .success(let searchMovie):
-                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                    if let vc = storyboard.instantiateViewController(withIdentifier: "DetailVC") as? DetailViewController
-                    {
-                        vc.movieDetail = searchMovie
-                        self.navigationController?.pushViewController(vc, animated: true)
-                    }
+                    self.showDetailVC(movieDetail: searchMovie)
                 case .failure(let error):
                     self.showAlert(title: "Error", message: error.localizedDescription)
                 case .none:
@@ -114,6 +109,15 @@ extension MasterViewController{
                 }
             }
             completion()
+        }
+    }
+    
+    func showDetailVC(movieDetail : MovieDetail){
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        if let vc = storyboard.instantiateViewController(withIdentifier: "DetailVC") as? DetailViewController
+        {
+            vc.movieDetail = movieDetail
+            self.navigationController?.pushViewController(vc, animated: true)
         }
     }
 }
